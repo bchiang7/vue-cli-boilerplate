@@ -1,0 +1,17 @@
+{
+  "presets": ["@babel/preset-env", "@vue/app"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "assets": "./src/assets",
+          "components": "./src/components",
+          "styles": "./src/styles"
+        }
+      }
+    ]
+  ]
+}
